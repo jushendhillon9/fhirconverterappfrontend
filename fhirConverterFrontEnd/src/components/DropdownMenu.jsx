@@ -50,7 +50,7 @@ const DropdownMenu = ({ givenProjectId, bucketsAndObjects }) => {
   const convertObjectToFhir = () => { //needs to grab the selected bucketName and selectedObject name
     const accessToken = localStorage.getItem('accessToken');
     const requestBody = projectId + "," + selectedObjectName + "," + selectedBucketName + "," + accessToken;
-    fetch("http://localhost:8080/api/objectToConvert", {
+    fetch("https://fhirconverterbackend-46baa901ea5d.herokuapp.com/api/objectToConvert", {
       method: "POST",
       body: requestBody
     })
