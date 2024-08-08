@@ -18,7 +18,7 @@ function DatasetUpload() {
         formData.append("region", region);
         formData.append("datasetName", datasetName);
         formData.append("storeName", storeName);
-        fetch("http://localhost:8080/api/upload-fhir-bundle", {
+        fetch("https://fhirconverterbackend-46baa901ea5d.herokuapp.com/api/upload-fhir-bundle", {
             method: "POST",
             body: formData,
         }) 
