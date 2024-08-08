@@ -1,0 +1,19 @@
+.googleLogo {
+    width: 1000px;
+}
+
+.loginWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.linebreak {
+    height: 2px;
+    flex-basis: 100%;
+}
+
+.loginButton {
+    position: relative;
+    bottom: 150px;
+}

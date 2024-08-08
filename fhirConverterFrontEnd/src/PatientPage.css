@@ -1,0 +1,102 @@
+.pageWrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.projectInfoWrapper {
+    background-color: #7EC8E3;
+    border: 2px solid black;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.patientDataWrapper {
+    background-color: beige;
+    width: 400px;
+}
+
+.patientDataHeader {
+    font-size: 30px;
+    font-weight: bold;
+}
+.viewOptions {
+    width: 100%;
+}
+.conditionsButton {
+    background-color: transparent;
+    width: 50%;
+    cursor: pointer;
+}
+.conditionsButton:hover {
+    opacity: 0.5;
+}
+.conditionsButtonSelected {
+    background-color: transparent;
+    width: 50%;
+    opacity: 0.5;
+}
+.allergiesButton {
+    background-color: transparent;
+    width: 50%;
+    cursor: pointer;
+}
+.allergiesButtonSelected {
+    background-color: transparent;
+    width: 50%;
+    opacity: 0.5;
+}
+.allergiesButton:hover {
+    opacity: 0.5;
+}
+
+.projectInfoForm {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.projectInput {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.projectInfoSubmitButton {
+    background-color: beige;
+    width: 60px;
+    height: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.projectLabel {
+    width: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: -20px;
+}
+
+.regionLabel {
+    margin-right: -45px;
+}
+
+.datasetLabel {
+    margin-right: 0px;
+}
+
+.projectInfoInput {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 20px;
+    margin-right: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.inputInstructions {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 25px;
+}

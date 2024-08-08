@@ -1,0 +1,96 @@
+.drop-area {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom:125px;
+    left: 450px;
+}
+
+.convertButton {
+    font-size: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: #7EC8E3;
+}
+
+.linebreak {
+    height: 2px;
+    flex-basis: 100%;
+}
+
+.secondWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: beige;
+    border: 2px dashed #000;
+    height: 200px;
+    align-self: center;
+    width: 300px;
+    position: absolute;
+    top: -10px;
+    right: 500px;
+}
+
+.fileBox {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 1;
+}
+
+.headerOne {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.arrow2 {
+    width: 200px;
+    height: auto;
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 220px;
+    left: 100px;
+}
+
+.convertedFileWrapper {
+    width: 200px;
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 300px;
+    right: 650px;
+    z-index: 1;
+}
+
+.fileIcon {
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.fileIcon:hover {
+    transform: scale(0.9);
+}
+
+.downloadIcon {
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.downloadIcon:hover {
+    transform: scale(0.9);
+}
+
+.viewFile, .downloadFile {
+    margin: 50px;
+    text-align: center;
+}

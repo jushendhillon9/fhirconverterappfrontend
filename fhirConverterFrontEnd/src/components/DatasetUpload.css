@@ -1,0 +1,45 @@
+.uploadToStoreWrapper {
+    background-color: beige;
+    width: 340px;
+    border: 2px solid black;
+    position: absolute;
+    top: 500px;
+    left: 40px;
+    padding: 5px;
+}
+
+.headieOne {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.inputBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.linebreak {
+    height: 1px;
+    flex-basis: 100%;
+}
+
+.inputtedWrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 20px;
+}
+
+.specificationInput {
+    margin: 10px;
+    margin-top: 0px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.uploadToStoreButton {
+    margin: 10px;
+    cursor: pointer;
+    background-color: #7EC8E3;
+    font-weight: bold;
+}

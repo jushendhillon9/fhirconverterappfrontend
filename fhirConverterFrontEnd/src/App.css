@@ -1,0 +1,157 @@
+html, body {
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.logo {
+  height: 3em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+
+.convertee {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.biggerWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  padding-bottom: auto;
+  width: 450px;
+  background-color: #7EC8E3;
+  height: 100px;
+  border: 2px solid black;
+}
+
+#ampersand {
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+.arrow {
+  width: 140px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -35px;
+  padding-left: 10px;
+  padding-right: 0px;
+}
+
+.arrowExplained {
+  position: relative;
+  top: 40px;
+}
+
+.navbar {
+  background-color: beige;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+.navbarText {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.conversionExplained {
+  font-size: 30px;
+}
+
+.model {
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 1;
+  text-align: center;
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  background-color: beige;
+}
+
+.gcpBucketConversion {
+  width: 300px;
+  background-color: #7EC8E3;
+  position: absolute;
+  left: 40px;
+  top: 150px;
+  border: 2px solid black;
+  padding: 15px;
+  z-index: 1;
+}
+
+.gcpConversionHeader {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.gcpSubmitButton {
+  margin-left: 20px;
+  background-color: transparent;
+  font-weight: bold;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.textbox {
+  margin-bottom: 15px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.processWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dragAndDrop {
+  margin: 20px;
+}
+
+.mainLogoWrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 0px;
+}
+
+.pulse {
+  width: 370px;
+  height: 400px;
+  background-color: beige;
+  border-radius: 50%;
+}
+
+.mainLogo {
+  width: 300px;
+  height: 300px;
+}
