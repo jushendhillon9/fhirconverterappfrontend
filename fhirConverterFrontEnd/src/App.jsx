@@ -24,7 +24,7 @@ function App() {
     const accessToken = localStorage.getItem('accessToken');
     const requestBody = accessToken + ',' + projectId;
 
-    fetch('http://localhost:8080/api/listBucketsAndObjects', {
+    fetch('https://fhirconverterbackend-46baa901ea5d.herokuapp.com/api/listBucketsAndObjects', {
       method: 'POST',
       headers: {
         'Content-Type': 'text/plain',
