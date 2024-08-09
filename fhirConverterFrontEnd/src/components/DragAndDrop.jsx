@@ -20,7 +20,7 @@ function DragAndDrop() {
         } else {
             const formData = new FormData();
             formData.append("fileToConvert", file);
-            fetch("http://localhost:8080/api/convertingFile", {
+            fetch("https://fhirconverterbackend-46baa901ea5d.herokuapp.com/api/convertingFile", {
                 method: "POST",
                 body: formData
             })
@@ -72,7 +72,7 @@ function DragAndDrop() {
         if (file) {
             const formData = new FormData();
             formData.append("file", file);
-            fetch("http://localhost:8080/api/uploadingFile", {
+            fetch("https://fhirconverterbackend-46baa901ea5d.herokuapp.com/api/uploadingFile", {
                 method: "POST",
                 body: formData
             }).then(response => {
