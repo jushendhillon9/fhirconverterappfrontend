@@ -20,7 +20,7 @@ function ViewPatientData({projectId, region, datasetName, fhirStoreName, patient
     formData.append("region", region)
     formData.append("datasetName", datasetName)
     formData.append("fhirStoreName", fhirStoreName)
-    fetch("http://localhost:8080/api/get-conditions", {
+    fetch("https://fhirconverterbackend-46baa901ea5d.herokuapp.com/api/get-conditions", {
         method: "POST",
         body: formData
     })
@@ -52,7 +52,7 @@ function ViewPatientData({projectId, region, datasetName, fhirStoreName, patient
     formData.append("region", region)
     formData.append("datasetName", datasetName)
     formData.append("fhirStoreName", fhirStoreName)
-    fetch("http://localhost:8080/api/get-conditions", {
+    fetch("https://fhirconverterbackend-46baa901ea5d.herokuapp.com/api/get-conditions", {
         method: "POST",
         body: formData
     })
