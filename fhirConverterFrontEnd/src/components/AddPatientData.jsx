@@ -24,7 +24,7 @@ function AddPatientData({projectId, region, datasetName, fhirStoreName, patientI
     formData.append("code", code);
     formData.append("description", description);
     formData.append("patientId", patientId);
-    fetch ("http://localhost:8080/api/create-condition", {
+    fetch ("https://fhirconverterbackend-46baa901ea5d.herokuapp.com/api/create-condition", {
       method: "POST", 
       body: formData
     })
@@ -51,7 +51,7 @@ function AddPatientData({projectId, region, datasetName, fhirStoreName, patientI
     formData.append("medicationName", medicationName);
     formData.append("medicationCode", medicationCode);
     formData.append("patientId", patientId)
-    fetch ("http://localhost:8080/api/create-medication", {
+    fetch ("https://fhirconverterbackend-46baa901ea5d.herokuapp.com/api/create-medication", {
       method: "POST", 
       body: formData
     })
