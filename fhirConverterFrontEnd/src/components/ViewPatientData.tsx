@@ -1,7 +1,6 @@
 import React from "react";
 import { FileText, Heart, AlertTriangle, Loader2 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 
@@ -60,14 +59,15 @@ function ViewPatientData({
       .catch(() => {
         setConditions(["Error loading conditions"]);
       })
-      .finally(() => setIsLoadingConditions(false));
+      .then(() => setIsLoadingConditions(false));
   };
 
   const fetchAllergies = () => {
+	const requestedResource = "AllergyIntolerances";
     setIsLoadingAllergies(true);
     const formData = new FormData();
     formData.append("patientId", patientId);
-    formData.append("requestedResource", "AllergyIntolerances");
+    formData.append("requestedResource", requestedResource)
     formData.append("projectId", projectId);
     formData.append("region", region);
     formData.append("datasetName", datasetName);
@@ -91,7 +91,7 @@ function ViewPatientData({
       .catch(() => {
         setAllergies(["Error loading allergies"]);
       })
-      .finally(() => setIsLoadingAllergies(false));
+      .then(() => setIsLoadingAllergies(false));
   };
 
   const handleDiagnosesClick = () => {

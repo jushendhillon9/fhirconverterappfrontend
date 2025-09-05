@@ -3,17 +3,22 @@
     "jsx": "react-jsx",
     "allowJs": true,
 
-    // Bundler mode
-    "moduleResolution": "bundler",
+    "target": "ES2017",
+    "lib": ["DOM", "ES2017"],
+
+    "moduleResolution": "bundler",   // keep as you had
     "module": "Preserve",
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "noEmit": true,
 
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+
+    "types": ["react", "react-dom"], // <- add this
+
     "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    "paths": { "@/*": ["./src/*"] }
   },
   "include": ["**/*.ts", "**/*.tsx", "src/Login.jsx"],
   "exclude": ["dist", "node_modules"]

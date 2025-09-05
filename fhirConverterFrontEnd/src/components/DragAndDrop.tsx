@@ -44,7 +44,7 @@ function DragAndDrop() {
       .catch((error) => {
         console.error("There was a problem with the fetch operation:", error);
       })
-      .finally(() => setIsLoading(false));
+      .then(() => setIsLoading(false));
   };
 
   const downloadFile = (event: React.MouseEvent<HTMLButtonElement>) => {

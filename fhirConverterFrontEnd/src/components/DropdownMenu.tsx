@@ -58,7 +58,7 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({
 
     const header = `Objects in ${bucket}:`;
     const bucketIndex = findIndexSafe(lines, (line) =>
-  sw(line, `Objects in ${bucket}:`)
+  sw(line as string, `Objects in ${bucket}:`)
 );
 
     const objectsForBucket: string[] = [];
